@@ -1,0 +1,37 @@
+{% load static %}
+
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}" />
+</head>
+
+<body>
+    <header>
+        <div class="main">
+          <img src="{% static 'css/images/logo.png' %}" alt="Logo" style="width: 20%; position:absolute; top:-15%; left:5%">
+            <ul>
+              <li><a href="{% url 'home' %}">Home</a> </li>
+              <li><a href="{% url 'addquestion' %}">Add Question</a></li>
+              <li class="active"><a href="{% url 'allquestions' %}">All Questions</a></li>
+              <li><a href="{% url 'askquestions' %}">Ask Question</a></li>
+              <li> <a href="{% url 'logout' %}">Log Out</a></li>  
+            </ul>
+          </div>
+
+          
+
+          <div style="border: 5px dashed gainsboro; width:30%; padding:50px; position:absolute;top:20%;left:30%"> 
+        
+              <div class="title2">
+                <h1>No results!!</h1>
+                <h3><a href="{% url 'askquestions' %}">Click here to Ask a Question!!</a><br></h3>
+                <h3><a href="{% url 'allquestions' %}">Click here to Search again!!</a></h3>
+              </div>
+        
+        </div>
+        
+    </header>
+    
+
+</body>
+</html>

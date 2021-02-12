@@ -1,0 +1,62 @@
+{% load static %}
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}" />
+</head>
+
+<body>
+  <header>
+      {% if user.is_authenticated %}
+        <div class="title">
+          <h1>IIT PALAKKAD</h1>
+        </div>
+        <div class="title2">
+          <h1>Hi {{ user.full_name }}, Welcome!!</h1>
+        </div>
+
+        <div class="title3">
+          <label>Total Experts:</label>
+          <h3>{{sup_count}}</h3>
+          <label>Total Users:</label>
+          <h3>{{user_count}}</h3>
+          <label>Total Questions:</label>
+          <h3>{{que_count}}</h3>
+          <label>Unanswered Questions:</label>
+          <h3>{{unans_count}}</h3>
+        </div>
+
+        
+        <div class="main">
+          <img src="{% static 'css/images/logo.png' %}" alt="Logo" style="width: 20%; position:absolute; top:-15%; left:5%">
+          <ul>
+            <li class="active"><a href="{% url 'home' %}">Home</a> </li>
+            <li><a href="{% url 'addquestion' %}">Add Question</a></li>
+            <li><a href="{% url 'allquestions' %}">All Questions</a></li>
+            <li><a href="{% url 'logout' %}">Log Out</a></li>
+          </ul>
+        
+        </div>
+      {% else %}
+        <div class="title">
+          <h1>IIT PALAKKAD</h1>
+        </div>
+        <div class="title2">
+          <h1>You are not logged in!</h1>
+        </div>
+        <div class="main">
+          <img src="{% static 'css/images/logo.png' %}" alt="Logo" style="width: 20%; position:absolute; top:-15%; left:5%">
+          <ul>
+            <li class="active"><a href="{% url 'home' %}">Home</a> </li>
+            <li><a href="{% url 'login' %}">Log In</a></li>
+            <li><a href="{% url 'signup' %}">Sign Up</a></li>
+          </ul>
+        </div>
+      {% endif %}
+    
+
+</header>
+
+  
+</body>
+</html>

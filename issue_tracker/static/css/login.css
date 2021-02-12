@@ -1,0 +1,170 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Century Gothic;
+}
+
+
+header{
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/unn.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+ul{
+	float: right;
+	list-style-type: none;
+	margin-top: 25px;
+
+
+}
+ul li{
+	display: inline-block;
+
+}
+
+ul li a{
+	text-decoration: none;
+	color: #000000;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	transition: 0.6s ease;
+
+}
+
+ul li a:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+ul li.active a{
+	background-color: #fff;
+	color: #000;
+}
+.main{
+	max-width: 1200px;
+	margin:auto;
+
+}
+
+.title{
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.title2{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	color: gainsboro;
+	transform: translate(-50%,-50%);
+}
+
+.title3{
+	position: absolute;
+	top: 30%;
+	left: 85%;
+	color: gainsboro;
+	transform: translate(-50%,-50%);
+	border: 5px dashed gainsboro; width:8%; padding:20px;
+}
+
+.title h1{
+	color: #fff;
+	font-size: 90px;
+}
+
+.form{
+	position: absolute;
+	top: 50%;
+	left: 65%;
+	float: left;
+	width: 60%;
+	margin: auto;
+	padding: 0 50px;
+	margin-top: 6px;
+	transform: translate(-50%,-50%);
+}
+.signup{
+	position: absolute;
+	border-color: black;
+	top: 20%;
+	left:5%;
+	width: 75%;
+	color: black;
+}
+.button{
+	position: absolute;
+	left: 3%;
+	transition-duration: 0.4s;
+	transform: translate(-50%,-50%);
+}
+
+.button:hover {
+	background-color: #596159; /* Green */
+	color: white;
+  }
+
+.btn{
+	border:1px solid #fff;
+	padding: 10px 30px;
+	color: #fff;
+	text-decoration: none;
+	transition: 0.6s ease;
+}
+.btn:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+#bg{
+    background-size: 1800px 900px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+body{
+	background: url(../images/1.jpg); 
+}
+
+.class1{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	color: gainsboro;
+	transform: translate(-50%,-50%);
+}
+.square {
+	left:20%;
+	top:20%;
+    height: 10vh;
+	width: 10vh;
+	border-color: black;
+}
+section{
+	display:block;
+
+}
+.allquestions{
+	position: absolute;
+	top:20%;
+	left:10%;
+}
+
+
+.search{
+	position: absolute;
+	top:10%;
+	left: 40;
+}
+.butt{
+	position: absolute;
+	top:15%;
+	left:10%;
+}
